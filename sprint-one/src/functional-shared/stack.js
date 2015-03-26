@@ -6,7 +6,6 @@ var Stack = function() {
     storageSize : 0
   };
 
-
   _.extend(someInstance, stackMethods);
 
   return someInstance;
@@ -25,12 +24,6 @@ var stackMethods = {
     if(this.storageSize > 0){
       result = this.storage[this.storageSize - 1];
       delete this.storage[this.storageSize - 1];
-
-      _.each(this.storage, function(val, key){
-        if(key !== "0"){
-          this.storage[key - 1] = val;
-        }
-      });
 
       this.storageSize--;
     }
