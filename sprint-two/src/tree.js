@@ -33,15 +33,3 @@ treeMethods.contains = function(target){
  * Complexity: What is the time complexity of the above functions?
  */
 
-var tree1 = Tree(1);
-tree1.addChild(2);
-tree1.addChild(3);
-tree1.children[0].addChild(4);
-tree1.children[0].addChild(5);
-tree1.children[0].addChild(6);
-console.log("tree1: ", JSON.stringify(tree1));
-console.log(tree1.contains(2));
-console.log(tree1.contains(3));
-console.log(tree1.contains(4));
-console.log(tree1.contains(5));
-console.log(tree1.contains(6));
