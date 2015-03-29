@@ -5,9 +5,10 @@ var Graph = function(){
 };
 
 Graph.prototype.addNode = function(node){
-  var newNode = {}
-  newNode.value = node;
-  newNode.edges = [];
+  var newNode = {
+    value: node,
+    edges: []
+  };
 
   this.nodes.push(newNode);
 };
